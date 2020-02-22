@@ -215,6 +215,75 @@ Transform:
   m_Father: {fileID: 1787935655}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &174191635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.001766
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.246428
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.8002357
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e88ccd1ca023a0d429fbe5653775d2a8,
+        type: 3}
+      propertyPath: m_Name
+      value: ShrekAnimations
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e88ccd1ca023a0d429fbe5653775d2a8, type: 3}
 --- !u!1 &217897148
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,7 +1010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037204788
 GameObject:
@@ -1842,7 +1911,7 @@ Transform:
   - {fileID: 1900325733}
   - {fileID: 1984604105}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889511653
 GameObject:
@@ -1892,7 +1961,7 @@ Transform:
   m_Children:
   - {fileID: 446848829}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900325732
 GameObject:
