@@ -10,7 +10,7 @@ public class XboxTest : MonoBehaviour
     public float leftAnalogStickHorizontal;
     public float leftAnalogStickVertical;
     private Rigidbody playerRigidbody;
-    private float speed = 5.0f;
+    private float speed = 2.0f;
     private Vector3 vel;
     public float distance = 1;
     GameObject playerPosition;
