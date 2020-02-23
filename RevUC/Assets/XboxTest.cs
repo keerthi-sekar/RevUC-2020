@@ -10,8 +10,10 @@ public class XboxTest : MonoBehaviour
     public float leftAnalogStickHorizontal;
     public float leftAnalogStickVertical;
     private Rigidbody playerRigidbody;
-    private float speed = 10.0f;
+    private float speed = 5.0f;
     private Vector3 vel;
+    public float distance = 1;
+    GameObject playerPosition;
 
     private void Awake()
     {
@@ -28,17 +30,17 @@ public class XboxTest : MonoBehaviour
     {
         aButton = Input.GetButton("A Button");
         //menuButton = Input.GetButton("Menu Button");
-        leftAnalogStickHorizontal = Input.GetAxis("Left Analog Stick (Horizontal)") * 5;
-        leftAnalogStickVertical = Input.GetAxis("Left Analog Stick (Vertical)") * 5;
-        Debug.Log("A button pressed" + aButton);
-        Debug.Log("left button pressed" + leftAnalogStickHorizontal);
-        Debug.Log("right button pressed" + leftAnalogStickVertical);
+        leftAnalogStickHorizontal = Input.GetAxis("Left Analog Stick (Horizontal)") * speed;
+        leftAnalogStickVertical = Input.GetAxis("Left Analog Stick (Vertical)") * speed;
        
-
-        vel = playerRigidbody.velocity;
-        vel.x = leftAnalogStickHorizontal;
-        vel.z = -leftAnalogStickVertical;
-        playerRigidbody.velocity = vel;
-        Debug.Log(vel);
+        var cam = Camera.main;
+        var forward = cam.transform.forward;
+        var right = cam.transform.right;
+        forward.y = 0f;
+        right.y = 0f;
+        forward.Normalize();
+        right.Normalize();
+        var desiredMoveDirection = -forward * leftAnalogStickVertical + right * leftAnalogStickHorizontal;
+        gameObject.transform.Translate(desiredMoveDirection * speed * Time.deltaTime);
     }
 }
