@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OnionExplode : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider hit)
     {
-        collision.gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }
