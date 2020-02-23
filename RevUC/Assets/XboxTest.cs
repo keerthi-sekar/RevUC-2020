@@ -33,11 +33,12 @@ public class XboxTest : MonoBehaviour
         Debug.Log("A button pressed" + aButton);
         Debug.Log("left button pressed" + leftAnalogStickHorizontal);
         Debug.Log("right button pressed" + leftAnalogStickVertical);
+       
 
         vel = playerRigidbody.velocity;
         vel.x = leftAnalogStickHorizontal;
         vel.y = leftAnalogStickVertical;
         playerRigidbody.velocity = vel;
-        
+        Debug.Log(vel);
     }
 }
