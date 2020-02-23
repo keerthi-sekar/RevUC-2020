@@ -162,9 +162,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33bc516bc70d7aa46bc74c814c6926be, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7599dc053a5f1a948ba0bb08bb6963c2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.694
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -535,9 +535,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 61ca418943f40b246a5e613e8b769b80, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e5e38aa64b02f844a634fb4b3ef55ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.799
+  m_Volume: 0.133
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4774,6 +4774,7 @@ GameObject:
   - component: {fileID: 1889511654}
   - component: {fileID: 1889511656}
   - component: {fileID: 1889511657}
+  - component: {fileID: 1889511658}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Player
@@ -4843,6 +4844,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.7914362, y: 3.5280352, z: 4.170807}
   m_Center: {x: -0.14681101, y: 1.2640176, z: 1.5854034}
+--- !u!81 &1889511658
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889511653}
+  m_Enabled: 1
 --- !u!1 &2081380681
 GameObject:
   m_ObjectHideFlags: 0
