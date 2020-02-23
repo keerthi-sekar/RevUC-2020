@@ -11,7 +11,7 @@ public class XboxTest : MonoBehaviour
     public float leftAnalogStickVertical;
     private Rigidbody playerRigidbody;
     private float speed = 10.0f;
-    private Vector3 vel = 0.0;
+    private Vector3 vel;
 
     private void Awake()
     {
