@@ -10,6 +10,8 @@ public class XboxTest : MonoBehaviour
     public float leftAnalogStickHorizontal;
     public float leftAnalogStickVertical;
     private Rigidbody playerRigidbody;
+    private float speed = 10.0f;
+    private Vector3 vel = 0.0;
 
     private void Awake()
     {
@@ -26,11 +28,16 @@ public class XboxTest : MonoBehaviour
     {
         aButton = Input.GetButton("A Button");
         //menuButton = Input.GetButton("Menu Button");
-        leftAnalogStickHorizontal = Input.GetAxis("Left Analog Stick (Horizontal)");
-        leftAnalogStickVertical = Input.GetAxis("Left Analog Stick (Vertical)");
+        leftAnalogStickHorizontal = Input.GetAxis("Left Analog Stick (Horizontal)") * 5;
+        leftAnalogStickVertical = Input.GetAxis("Left Analog Stick (Vertical)") * 5;
         Debug.Log("A button pressed" + aButton);
-        Debug.Log("A button pressed" + leftAnalogStickHorizontal);
-        Debug.Log("A button pressed" + leftAnalogStickVertical);
+        Debug.Log("left button pressed" + leftAnalogStickHorizontal);
+        Debug.Log("right button pressed" + leftAnalogStickVertical);
 
+        vel = playerRigidbody.velocity;
+        vel.x = leftAnalogStickHorizontal;
+        vel.y = leftAnalogStickVertical;
+        playerRigidbody.velocity = vel;
+        
     }
 }
