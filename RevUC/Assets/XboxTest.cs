@@ -37,7 +37,7 @@ public class XboxTest : MonoBehaviour
 
         vel = playerRigidbody.velocity;
         vel.x = leftAnalogStickHorizontal;
-        vel.y = leftAnalogStickVertical;
+        vel.z = -leftAnalogStickVertical;
         playerRigidbody.velocity = vel;
         Debug.Log(vel);
     }
