@@ -7,14 +7,24 @@ public class ShrekAttack : MonoBehaviour
 {
     public Transform shrekPosition; //start
     public GameObject playerRig; //end
+    public XboxTest xboxTest;
     private float startTime = 0.0f;
-    private bool test = false;
+    private int test = 500;
+    private int count = 0;
 
     private void Start()
     {
         startTime = Time.time;
     }
-
+    private void Update()
+    {
+        Debug.Log(count);
+        count++;
+        if(count >= test)
+        {
+            AttackPlayer();
+        }
+    }
     public void AttackPlayer()
     {
         shrekPosition.position = this.gameObject.transform.position;

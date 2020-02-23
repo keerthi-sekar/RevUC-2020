@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     private int totalTime = 30;
     public GameObject uiMenu;
     public TextMeshPro timer;
+    public ShrekAttack attacker;
 
     private void Update()
     {
@@ -29,6 +30,7 @@ public class Timer : MonoBehaviour
         if(totalTime == 0)
         {
             Debug.Log("Game Over");
+            attacker.AttackPlayer();
         }
     }
 }
