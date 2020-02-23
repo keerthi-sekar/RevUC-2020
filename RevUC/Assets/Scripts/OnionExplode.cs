@@ -6,6 +6,7 @@ public class OnionExplode : MonoBehaviour
 {
     void OnTriggerEnter(Collider hit)
     {
+        AudioManager.Instance.eatingNoise.Play();
         Destroy(gameObject);
     }
 }
