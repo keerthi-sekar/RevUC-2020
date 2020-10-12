@@ -7,3 +7,10 @@ Oculus Rift + xbox controller
 
 Unity Version: 2019.3.0f6
 Uses XR Toolkit Unity Package
+
+**Contributors**
+
+- Keerthi: Project setup, Github setup, and functionality
+- Grayson: Controller Bindings and functionality
+- Jamie: Models through Blender and textures
+- Jace: Create animations and characters in Maya and Blender
